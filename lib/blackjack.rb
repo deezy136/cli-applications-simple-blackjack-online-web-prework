@@ -52,15 +52,15 @@ def invalid_command
 end
 def hit?(current_card_value)
   prompt_user
-  user_input = get_user_input
+  get_user_input
   
-  while user_input != "h" && user_input != "s"
+  while get_user_input != "h" && get_user_input != "s"
     invalid_command
     prompt_user
-    user_input = get_user_input
+     get_user_input
   end
   
-  if user_input == "h"
+  if get_user_input == "h"
     current_card_value += deal_card
   end
   return current_card_value
