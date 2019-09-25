@@ -77,4 +77,5 @@ def runner
   initial_round
   prompt_user
   hit?()
+  display_card_total
 end
